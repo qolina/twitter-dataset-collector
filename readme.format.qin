@@ -1,0 +1,10 @@
+status + SEPARATOR + suspended + SEPARATOR + parsingError + SEPARATOR + otherError + SEPARATOR + msecSpent + SEPARATOR + tweet;
+
+isTweetCode() + SEPARATOR + id + SEPARATOR + username + SEPARATOR + tweetText + SEPARATOR + pubTime + SEPARATOR + numRetweets + SEPARATOR + numFavorites + SEPARATOR + responseTo();
+
+TweetCode
+if (text == null){return "N";} 
+else if (isRetweeet()){return "R";} 
+else if (isReply()) {return "Rp";} 
+else {return "O";}
+
